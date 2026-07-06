@@ -24,6 +24,9 @@
 .DS_Store
 *.pem
 
+# local Claude Code tool config (personal, not meant to be shared)
+.claude/
+
 # debug
 npm-debug.log*
 yarn-debug.log*
