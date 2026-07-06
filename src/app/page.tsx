@@ -4,6 +4,7 @@ import { useGameStore } from "@/store/useGameStore";
 import GameCanvas from "@/components/GameCanvas";
 import UIOverlay from "@/ui/UIOverlay";
 import Screens from "@/ui/Screens";
+import HowToPlayOverlay from "@/ui/HowToPlayOverlay";
 
 export default function Home() {
   const { gameState, setGameState } = useGameStore();
@@ -27,6 +28,9 @@ export default function Home() {
       <div className="absolute inset-0 z-10 pointer-events-none">
         <UIOverlay />
       </div>
+
+      {/* First-mission tutorial (in-game, dismissible) */}
+      <HowToPlayOverlay />
     </main>
   );
 }
